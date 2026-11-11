@@ -151,3 +151,10 @@ body { background: #f3f0f5; }
 @media screen and (max-width: 76.234375em) {
   .md-sidebar--primary .pocket-docs-nav { padding: 24px 16px; }
 }
+
+/* Fotos e perfis da equipe. */
+.pocket-team { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; margin: 28px 0 40px; }
+.md-typeset .pocket-member { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 18px 12px; border-radius: 18px; color: #493455; font-weight: 700; text-align: center; text-decoration: none; }
+.pocket-member img, .pocket-member__placeholder { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #e2c8ef; }
+.pocket-member__placeholder { display: flex; align-items: center; justify-content: center; background: #f1dfff; color: #600099; font-size: 32px; }
+.md-typeset a.pocket-member:hover { background: #f1dfff; color: #600099; }

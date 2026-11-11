@@ -39,13 +39,15 @@ O Pocket Guide de Acessibilidade é um guia prático desenvolvido pelo Grupo 09 
 
 ## Equipe
 
-- Felipe Melo
-- Marco Antônio
-- Charles Ruan
-- Matheus Eiki
-- Gabriel Portácio
-- Giovanna Aguiar
-- Kaiky Dourado
+<div class="pocket-team">
+<a class="pocket-member" href="https://github.com/felipemso"><img src="https://github.com/felipemso.png?size=240" width="120" height="120" alt="Foto de Felipe Melo" loading="lazy"><span>Felipe Melo</span></a>
+<a class="pocket-member" href="https://github.com/Marctroman"><img src="https://github.com/Marctroman.png?size=240" width="120" height="120" alt="Foto de Marco Antônio" loading="lazy"><span>Marco Antônio</span></a>
+<a class="pocket-member" href="https://github.com/CharlesRuan-MAP"><img src="https://github.com/CharlesRuan-MAP.png?size=240" width="120" height="120" alt="Foto de Charles Ruan" loading="lazy"><span>Charles Ruan</span></a>
+<a class="pocket-member" href="https://github.com/Mateiki"><img src="https://github.com/Mateiki.png?size=240" width="120" height="120" alt="Foto de Matheus Eiki" loading="lazy"><span>Matheus Eiki</span></a>
+<a class="pocket-member" href="https://github.com/G2SBiell"><img src="https://github.com/G2SBiell.png?size=240" width="120" height="120" alt="Foto de Gabriel Portácio" loading="lazy"><span>Gabriel Portácio</span></a>
+<a class="pocket-member" href="https://github.com/giovannabrito19"><img src="https://github.com/giovannabrito19.png?size=240" width="120" height="120" alt="Foto de Giovanna Aguiar" loading="lazy"><span>Giovanna Aguiar</span></a>
+<a class="pocket-member" href="https://github.com/kaikysousa"><img src="https://github.com/kaikysousa.png?size=240" width="120" height="120" alt="Foto de Kaiky Dourado" loading="lazy"><span>Kaiky Dourado</span></a>
+</div>
 
 ## Ajuda {#ajuda}
 
