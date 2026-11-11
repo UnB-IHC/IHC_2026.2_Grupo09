@@ -1,0 +1,18 @@
+{# A navegação usa as páginas do mkdocs.yml para manter os links sincronizados. #}
+{% macro documentation_items(items) %}
+  {% for item in items %}
+    {% if item.children %}
+      {{ documentation_items(item.children) }}
+    {% elif not item.is_homepage %}
+      <li class="pocket-docs-nav__item">
+        <a class="pocket-docs-nav__link{% if item.active %} pocket-docs-nav__link--active{% endif %}" href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+<nav class="md-nav md-nav--primary pocket-docs-nav" aria-label="Documentação" data-md-level="0">
+  <a class="pocket-docs-nav__heading" href="{{ 'index.html' | url }}#documentacao">Documentação</a>
+  <ul class="pocket-docs-nav__list">
+    {{ documentation_items(nav.items) }}
+  </ul>
+</nav>

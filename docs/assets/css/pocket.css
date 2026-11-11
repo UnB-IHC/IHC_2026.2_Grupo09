@@ -21,3 +21,50 @@
 .pocket-header .md-search__icon { color: #2b2030; top: 17px; }
 .pocket-menu, .pocket-search-toggle { display: none; }
 .pocket-header :focus-visible { outline: 3px solid #ffc400; outline-offset: 5px; }
+
+/* Menu lateral da documentação: superfície lilás e seleção em roxo. */
+.md-sidebar--primary {
+  background: linear-gradient(155deg, #f0e7f7 0%, #fcfafc 70%);
+  border-right: 1px solid #e2c8ef;
+}
+.md-sidebar--primary .pocket-docs-nav {
+  background: transparent;
+  padding: 20px 0;
+  font-family: var(--font-ui);
+}
+.md-sidebar--primary .pocket-docs-nav__heading,
+.md-sidebar--primary .pocket-docs-nav__link {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.3;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.md-sidebar--primary .pocket-docs-nav__heading {
+  margin-bottom: 12px;
+  color: #600099;
+  background: linear-gradient(100deg, #f1dfff, #fcfafc);
+  box-shadow: inset 3px 0 #600099;
+  font-weight: 750;
+}
+.pocket-docs-nav__list { list-style: none; padding: 0; margin: 0; }
+.pocket-docs-nav__item { margin: 0 0 10px; }
+.md-sidebar--primary .pocket-docs-nav__link { color: #493455; }
+.md-sidebar--primary .pocket-docs-nav__link:hover { background: #eedcf9; }
+.md-sidebar--primary .pocket-docs-nav__link--active,
+.md-sidebar--primary .pocket-docs-nav__link--active:hover {
+  color: #600099;
+  background: linear-gradient(100deg, #f1dfff, #fcfafc);
+  box-shadow: inset 3px 0 #600099;
+  font-weight: 750;
+}
+.md-sidebar--primary .pocket-docs-nav :focus-visible {
+  outline: 3px solid #600099;
+  outline-offset: 2px;
+}
+@media screen and (max-width: 76.234375em) {
+  .md-sidebar--primary .pocket-docs-nav { padding: 24px 16px; }
+}
