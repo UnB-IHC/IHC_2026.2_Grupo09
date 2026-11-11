@@ -24,6 +24,27 @@ As perguntas estão consolidadas em [perguntas.md](perguntas.md), com referênci
 
 Escolha uma área do guia e percorra o checklist conforme o conteúdo ou produto avaliado. Marque cada item atendido e registre os que ainda precisam de ajustes. Quando uma pergunta não se aplicar, indique “N/A” ao lado.
 
+## Desenvolvimento local
+
+Use Python 3.12 e instale as dependências em um ambiente virtual:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m mkdocs serve
+```
+
+Para validar a documentação antes de enviar alterações, execute `python -m mkdocs build --strict`.
+
+## Publicação automática
+
+O workflow [MkDocs CI e deploy](.github/workflows/deploy-mkdocs.yml) valida a documentação nos pull requests para `main`. A cada push em `main`, ele gera o site a partir dos arquivos-fonte e publica no GitHub Pages. Também é possível executá-lo manualmente pela aba **Actions**, selecionando a branch `main`.
+
+Para habilitar a publicação, acesse **Settings → Pages → Build and deployment → Source** no repositório e selecione **GitHub Actions**. O workflow usa o token automático do GitHub, sem necessidade de cadastrar um token pessoal.
+
+O site será publicado em https://unb-ihc.github.io/IHC_2026.2_Grupo09/. A pasta `site/` é uma saída gerada; o workflow faz uma nova geração em cada execução, sem depender dos arquivos dessa pasta versionados no repositório.
+
 ## Equipe
 
 <table>
