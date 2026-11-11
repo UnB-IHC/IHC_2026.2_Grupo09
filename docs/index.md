@@ -33,4 +33,22 @@ Escolha uma área para consultar os checklists e colocar a acessibilidade em pr�
 <a class="pocket-guide" href="tools/ferramentas.html"><span class="pocket-guide__number" aria-hidden="true">05</span><h3>Ferramentas de Acessibilidade</h3><p>Recursos para avaliar e melhorar a acessibilidade.</p><span class="pocket-guide__action">Consultar guia <span aria-hidden="true">→</span></span></a>
 </div>
 
+## Sobre o projeto {#projetos}
+
+O Pocket Guide de Acessibilidade é um guia prático desenvolvido pelo Grupo 09 da disciplina de Interação Humano-Computador da Universidade de Brasília (UnB), no semestre 2026.2. O projeto reúne checklists e recursos para apoiar a criação e a avaliação de produtos digitais acessíveis nas áreas de desenvolvimento web, design, geração de conteúdo e gestão de projetos.
+
+## Equipe
+
+- Felipe Melo
+- Marco Antônio
+- Charles Ruan
+- Matheus Eiki
+- Gabriel Portácio
+- Giovanna Aguiar
+- Kaiky Dourado
+
+## Ajuda {#ajuda}
+
+Comece escolhendo uma área na documentação. Use a busca no cabeçalho para encontrar um tema e marque os itens dos checklists durante sua consulta.
+
 </div>
