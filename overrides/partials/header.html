@@ -9,6 +9,15 @@
       <a href="{{ 'index.html' | url }}#equipe">Equipe</a>
       <a href="{{ 'index.html' | url }}#ajuda">Ajuda</a>
     </div>
+    <div class="pocket-accessibility" role="group" aria-label="Opções de acessibilidade">
+      <button class="pocket-accessibility__button pocket-accessibility__theme" type="button" data-pocket-action="theme" aria-label="Modo escuro" aria-pressed="false" title="Ativar modo escuro" disabled>
+        {% include ".icons/material/weather-night.svg" %}
+      </button>
+      <button class="pocket-accessibility__button" type="button" data-pocket-action="contrast" aria-pressed="false" title="Ativar alto contraste" disabled>Contraste</button>
+      <button class="pocket-accessibility__button" type="button" data-pocket-action="increase" aria-label="Aumentar tamanho do texto" title="Aumentar tamanho do texto" disabled><span aria-hidden="true">A+</span></button>
+      <button class="pocket-accessibility__button" type="button" data-pocket-action="decrease" aria-label="Diminuir tamanho do texto" title="Diminuir tamanho do texto" disabled><span aria-hidden="true">A−</span></button>
+      <span class="pocket-accessibility__status" role="status" aria-atomic="true"></span>
+    </div>
     {% if 'material/search' in config.plugins %}
       {% set search = config.plugins['material/search'] | attr('config') %}
       <label class="md-header__button md-icon pocket-search-toggle" for="__search" aria-label="Buscar no projeto">{% include ".icons/material/magnify.svg" %}</label>

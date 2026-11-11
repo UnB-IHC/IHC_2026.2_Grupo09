@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {# Aplica as preferências antes da primeira renderização da página. #}
+  <script src="{{ 'assets/js/accessibility.js' | url }}"></script>
+{% endblock %}
