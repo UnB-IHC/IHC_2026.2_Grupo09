@@ -1,28 +1,23 @@
-repo_url: https://github.com/vitorfleonardo/VerificAAA
-repo_name: VerificAAA
+repo_url: https://github.com/UnB-IHC/IHC_2026.2_Grupo09
+repo_name: Pocket Guide de Acessibilidade
 
-site_url: https://github.com/vitorfleonardo/VerificAAA
-site_name: VerificAAA
+site_url: https://unb-ihc.github.io/IHC_2026.2_Grupo09/
+site_name: Pocket guide de acessibilidade
 
-use_directory_urls: False
+use_directory_urls: false
 
 nav:
-  - Início - VerificAAA: 'index.md'
-
+  - Início: index.md
   - Desenvolvimento Web:
-    - Desenvolvimento: 'devWeb/non_text_content.md'
-
+      - Desenvolvimento: devWeb/non_text_content.md
   - Design:
-    - Design: 'design/design.md'
-  
+      - Design: design/design.md
   - Geração de Conteúdo:
-    - Conteúdo: 'geracaoConteudo/conteudo.md'
-
+      - Conteúdo: geracaoConteudo/conteudo.md
   - Gestão de Projetos:
-    - Gestão de Projetos: 'gestaoProjeto/gestaoProjeto.md'
-
+      - Gestão de Projetos: gestaoProjeto/gestaoProjeto.md
   - Ferramentas:
-    - Ferramentas de Acessibilidade: 'tools/ferramentas.md'
+      - Ferramentas de Acessibilidade: tools/ferramentas.md
 
 theme:
   name: readthedocs
