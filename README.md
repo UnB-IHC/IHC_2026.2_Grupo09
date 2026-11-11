@@ -24,6 +24,8 @@ As perguntas estão consolidadas em [perguntas.md](perguntas.md), com referênci
 
 Escolha uma área do guia e percorra o checklist conforme o conteúdo ou produto avaliado. Marque cada item atendido e registre os que ainda precisam de ajustes. Quando uma pergunta não se aplicar, indique “N/A” ao lado.
 
+Na navbar, use o ícone de lua para alternar o modo escuro, **Contraste** para ativar ou desativar o alto contraste e **A+ / A−** para ajustar o tamanho do texto entre 80% e 150%. As preferências são salvas no navegador e mantidas ao navegar entre as páginas. O alto contraste tem prioridade sobre as cores do modo escuro; ao desativá-lo, a paleta escolhida é restaurada. Os controles podem ser acionados com Tab e Enter ou Espaço.
+
 ## Desenvolvimento local
 
 Use Python 3.12 e instale as dependências em um ambiente virtual:

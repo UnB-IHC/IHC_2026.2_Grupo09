@@ -27,7 +27,7 @@ theme:
     scheme: identidade
   font: false
   logo: assets/img/logo.svg
-  favicon: assets/img/favicon.png
+  favicon: assets/img/pocket-eye.svg
   features:
     - navigation.sections
     - navigation.indexes
