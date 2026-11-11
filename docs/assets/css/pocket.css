@@ -59,6 +59,7 @@ body { background: #f3f0f5; }
 .pocket-guide__action span { font-size: 24px; }
 .md-typeset a.pocket-guide:hover, .md-typeset a.pocket-guide:focus-visible { border-color: #600099; box-shadow: 0 6px 20px #42006416; }
 .pocket-guide:hover .pocket-guide__number { background: #ffc400; color: #291a2e; }
+@media (prefers-reduced-motion: reduce) { .md-typeset a.pocket-guide { transition: none; } }
 .pocket-details table img { max-width: 100%; }
 .pocket-header :focus-visible { outline: 3px solid #ffc400; outline-offset: 5px; }
 :focus-visible { outline: 3px solid #600099; outline-offset: 4px; }
@@ -102,6 +103,7 @@ body { background: #f3f0f5; }
   .pocket-actions, .md-typeset .pocket-button { width: 100%; }
   .md-content__inner, [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { padding: 1.25rem; }
 }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* Menu lateral da documentação: superfície lilás e seleção em roxo. */
 .md-sidebar--primary {
