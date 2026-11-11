@@ -335,3 +335,192 @@ body {
   color: var(--ident-primary);
   box-shadow: inset 3px 0 0 var(--ident-primary);
 }
+
+/* --------------------------------------------------------------------------
+   Seções 1.2, 1.3, 3.4, 3.5 e 3.6 — Componentes Padronizados
+   -------------------------------------------------------------------------- */
+
+/* Citações (Seção 3.4 e 3.6) */
+.md-typeset blockquote {
+  background-color: var(--ident-surface);
+  border-left: 4px solid var(--ident-secondary);
+  border-radius: 0 6px 6px 0;
+  color: var(--ident-text);
+  padding: 0.75rem 1rem;
+}
+
+/* Código tratado como card (Seção 1.2, 3.4 e 3.6) */
+.md-typeset .highlight,
+.md-typeset code {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 4px;
+  color: var(--ident-text);
+}
+
+.md-typeset pre > code {
+  border: none;
+}
+
+/* Tabelas (Seção 2.2, 3.4 e 3.6) */
+.md-typeset table:not([class]) {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 6px;
+  font-size: 0.9375rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--ident-lilac);
+  color: var(--ident-text);
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--ident-border);
+}
+
+/* Admonitions — Base (Seção 1.2, 2.2) */
+.md-typeset :is(.admonition, details) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(43, 43, 43, 0.04);
+  font-size: 0.9375rem;
+}
+
+.md-typeset :is(.admonition-title, summary) {
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+/* Admonitions: note, tip, example e info (Seção 3.4 e 3.6) */
+.md-typeset :is(.admonition, details):is(.note, .tip, .example, .info) {
+  border-color: var(--ident-primary);
+}
+
+.md-typeset :is(.note, .tip, .example, .info) > :is(.admonition-title, summary) {
+  background-color: var(--ident-lilac);
+  color: var(--ident-primary);
+}
+
+.md-typeset :is(.note, .tip, .example, .info) > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-primary);
+}
+
+/* Admonition: warning (Seção 3.4 e 3.6) */
+.md-typeset :is(.admonition, details).warning {
+  border-color: var(--ident-accent);
+}
+
+.md-typeset .warning > :is(.admonition-title, summary) {
+  background-color: var(--ident-accent-soft);
+  color: var(--ident-text);
+}
+
+.md-typeset .warning > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-text);
+}
+
+/* Admonition: danger (cor complementar, apenas borda e ícone — Seção 3.5 e 3.6) */
+.md-typeset :is(.admonition, details).danger {
+  border-color: var(--ident-danger);
+}
+
+.md-typeset .danger > :is(.admonition-title, summary) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+}
+
+.md-typeset .danger > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-danger);
+}
+
+/* Admonition: success / confirmações (cor complementar, apenas borda e ícone — Seção 3.5) */
+.md-typeset :is(.admonition, details).success {
+  border-color: var(--ident-success);
+}
+
+.md-typeset .success > :is(.admonition-title, summary) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+}
+
+.md-typeset .success > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-success);
+}
+
+/* Abas de conteúdo (Seção 1.3 e 2.2) */
+.md-typeset .tabbed-labels > label {
+  font-family: var(--font-ui);
+  color: var(--ident-text);
+}
+
+.md-typeset .tabbed-set > input:checked + label {
+  color: var(--ident-primary);
+  border-color: var(--ident-primary);
+}
+
+/* Botões (Seção 2.2, 3.2, 3.4 e 3.6) */
+.md-typeset .md-button {
+  background-color: var(--ident-surface);
+  border-color: var(--ident-primary);
+  border-radius: 6px;
+  color: var(--ident-primary);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--ident-lilac);
+  border-color: var(--ident-primary);
+  color: var(--ident-primary);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--ident-accent);
+  border-color: var(--ident-accent);
+  color: var(--ident-text);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--ident-accent);
+  border-color: var(--ident-primary);
+  color: var(--ident-text);
+}
+
+/* Cards (Seção 1.2 e 3.2) */
+.card,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(43, 43, 43, 0.05);
+  color: var(--ident-text);
+}
+
+/* Etiquetas (uso: <span class="etiqueta-info">Categoria</span> — Seção 2.2 e 3.6) */
+.etiqueta-info,
+.etiqueta-atencao {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.etiqueta-info {
+  background-color: var(--ident-lilac);
+  color: var(--ident-primary);
+}
+
+.etiqueta-atencao {
+  background-color: var(--ident-accent-soft);
+  color: var(--ident-text);
+}
