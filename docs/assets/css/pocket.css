@@ -1,0 +1,23 @@
+.md-header.pocket-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  margin: 14px 6px 0;
+  border-radius: 36px 36px 0 0;
+  background: linear-gradient(110deg, #600099, #400066);
+  box-shadow: none;
+}
+.pocket-header__inner { display: flex; align-items: center; gap: 28px; max-width: 1800px; min-height: 112px; padding: 18px 40px; margin: auto; }
+.pocket-brand { font-size: clamp(20px, 2.1vw, 36px); font-weight: 800; line-height: 1.15; color: white; flex-shrink: 0; }
+.pocket-nav { display: flex; justify-content: space-evenly; align-items: center; gap: 24px; flex: 1; }
+.pocket-nav a { position: relative; padding: 20px 0; font-size: 22px; white-space: nowrap; color: white; }
+.pocket-nav a:hover { color: #ffe586; }
+.pocket-nav .is-active { font-weight: 700; }
+.pocket-nav .is-active::after { content: ""; position: absolute; height: 8px; border-radius: 8px; background: #ffc400; bottom: -4px; left: -8px; right: -8px; }
+.pocket-header .md-search { padding: 0; }
+.pocket-header .md-search__form { background: white; border-radius: 40px; color: #2b2030; height: 58px; }
+.pocket-header .md-search__input { color: #2b2030; font-family: var(--font-ui); font-size: 19px; }
+.pocket-header .md-search__input::placeholder { color: #625868; }
+.pocket-header .md-search__icon { color: #2b2030; top: 17px; }
+.pocket-menu, .pocket-search-toggle { display: none; }
+.pocket-header :focus-visible { outline: 3px solid #ffc400; outline-offset: 5px; }

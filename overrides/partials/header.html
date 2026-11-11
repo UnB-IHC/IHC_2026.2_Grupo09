@@ -1,0 +1,18 @@
+<header class="md-header pocket-header" data-md-component="header">
+  <nav class="pocket-header__inner" aria-label="Navegação principal">
+    <label class="md-header__button md-icon pocket-menu" for="__drawer" aria-label="Abrir menu">{% include ".icons/material/menu.svg" %}</label>
+    <a class="pocket-brand" href="{{ 'index.html' | url }}">G9</a>
+    <div class="pocket-nav">
+      <a href="{{ 'index.html' | url }}" {% if page and page.is_homepage %}class="is-active" aria-current="page"{% endif %}>Início</a>
+      <a href="{{ 'index.html' | url }}#projetos">Projetos</a>
+      <a href="{{ 'index.html' | url }}#documentacao" {% if page and not page.is_homepage %}class="is-active"{% endif %}>Documentação</a>
+      <a href="{{ 'index.html' | url }}#equipe">Equipe</a>
+      <a href="{{ 'index.html' | url }}#ajuda">Ajuda</a>
+    </div>
+    {% if 'material/search' in config.plugins %}
+      {% set search = config.plugins['material/search'] | attr('config') %}
+      <label class="md-header__button md-icon pocket-search-toggle" for="__search" aria-label="Buscar no projeto">{% include ".icons/material/magnify.svg" %}</label>
+      {% include "partials/search.html" %}
+    {% endif %}
+  </nav>
+</header>
