@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620">
+  <defs>
+    <linearGradient id="lilac" x2="1" y2="1"><stop stop-color="#f4e4ff"/><stop offset="1" stop-color="#ecd3fc"/></linearGradient>
+    <linearGradient id="purple" x2="1" y2="1"><stop stop-color="#420064"/><stop offset="1" stop-color="#300043"/></linearGradient>
+  </defs>
+  <path d="M90 286C177 233 252 259 330 156 437 12 564 5 644 69 759 160 727 330 608 429 492 525 369 529 212 506 55 483-49 399 90 286Z" fill="url(#lilac)"/>
+  <ellipse cx="414" cy="544" rx="287" ry="46" fill="#eed6fc"/>
+  <ellipse cx="409" cy="544" rx="223" ry="17" fill="#dfbbed" opacity=".7"/>
+  <g fill="none" stroke="#ffc400" stroke-width="17" stroke-linecap="round">
+    <path d="m206 137 42 13m-10-74 38 37m29-65 12 42"/>
+  </g>
+  <path d="M172 254C260 262 296 222 365 186 446 143 490 153 553 196L664 271C684 286 685 303 664 306 603 310 563 332 548 373 534 412 553 461 518 497 499 517 474 510 474 484V388C417 425 360 488 301 507 230 530 171 501 160 454 149 411 173 366 216 354 258 343 294 362 302 389 309 413 293 434 273 431 254 429 251 411 263 402 252 386 228 399 224 420 216 452 247 468 280 460 325 451 381 405 419 354 380 362 349 321 308 310 265 296 231 317 189 302 155 291 144 254 172 254Z" fill="url(#purple)"/>
+  <circle cx="478" cy="261" r="77" fill="#fff"/>
+  <circle cx="478" cy="261" r="54" fill="#39004e"/>
+  <circle cx="478" cy="261" r="40" fill="#ffc400"/>
+</svg>

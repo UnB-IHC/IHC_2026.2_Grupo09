@@ -1,0 +1,546 @@
+/* ==========================================================================
+   Identidade Visual da Documentação — Pocket Guide de Acessibilidade (Esquemática Roxo e Amarelo)
+   Referência: identidade-visual-mkdocs.md (v1.2)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+
+/* --------------------------------------------------------------------------
+   Seção 3.6 — Esquemática Roxo e Amarelo (Tokens e Variáveis do Material)
+   -------------------------------------------------------------------------- */
+:root,
+[data-md-color-scheme="identidade"] {
+  /* Tokens da identidade (Seção 3.1 e 3.5) */
+  --ident-primary:     #7B2CBF;
+  --ident-secondary:   #9D4EDD;
+  --ident-accent:      #F2C94C;
+  --ident-accent-soft: #FFF4CC;
+  --ident-lilac:       #F3E5FA;
+  --ident-bg:          #F7F7F5;
+  --ident-surface:     #FFFFFF;
+  --ident-border:      #D9D9D6;
+  --ident-text:        #2B2B2B;
+  --ident-danger:      #E03131;
+  --ident-success:     #2F9E44;
+
+  /* Famílias tipográficas (Seção 2.1) */
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:    "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui:      "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Variáveis do tema Material (Seção 3.6) */
+  --md-primary-fg-color:        var(--ident-primary);
+  --md-primary-fg-color--light: var(--ident-secondary);
+  --md-primary-fg-color--dark:  var(--ident-primary);
+  --md-primary-bg-color:        #FFFFFF;
+  --md-accent-fg-color:         var(--ident-primary);
+  --md-default-bg-color:        var(--ident-bg);
+  --md-default-fg-color:        var(--ident-text);
+  --md-code-bg-color:           var(--ident-surface);
+  --md-code-fg-color:           var(--ident-text);
+  --md-typeset-color:           var(--ident-text);
+  --md-typeset-a-color:         var(--ident-primary);
+  --md-text-font:               "Source Serif 4";
+}
+
+/* --------------------------------------------------------------------------
+   Seção 2 — Fontes e Escala Tipográfica (Base 1rem = 16px)
+   -------------------------------------------------------------------------- */
+html {
+  font-size: 100%;
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  background-color: var(--ident-bg);
+  color: var(--ident-text);
+  font-family: var(--font-body);
+}
+
+/* Corpo de texto: 1,0625 rem (17 px), peso 400, altura de linha 1,7 (Seção 2.3) */
+.md-typeset {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ident-text);
+}
+
+/* Títulos, texto e links (Seções 2.2, 2.3, 3.4 e 3.6) */
+.md-typeset h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ident-text);
+  border-bottom: 2px solid var(--ident-primary);
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ident-text);
+}
+
+.md-typeset h3 {
+  font-family: var(--font-body);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ident-text);
+}
+
+.md-typeset h4 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ident-text);
+}
+
+.md-typeset a {
+  color: var(--ident-primary);
+  text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  color: var(--ident-primary);
+  text-decoration-thickness: 2px;
+}
+
+/* Legendas e notas: Source Sans 3, 0,8125 rem (13 px), peso 400, linha 1,5 (Seção 2.2 e 2.3) */
+.md-typeset figcaption,
+.md-typeset caption,
+.md-typeset .footnote {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ident-text);
+}
+
+/* --------------------------------------------------------------------------
+   Seção 4 — Estrutura e Navegação Lateral
+   -------------------------------------------------------------------------- */
+
+/* Sumário lateral direito e rodapé ocultos (Seção 4.2) */
+.md-sidebar--secondary,
+.md-footer {
+  display: none;
+}
+
+/* Cabeçalho oculto apenas em telas grandes;
+   em telas pequenas ele é necessário para abrir o menu (Seção 4.2) */
+@media screen and (min-width: 76.25em) {
+  .md-header {
+    display: none;
+  }
+
+  .md-main__inner.md-grid {
+    max-width: none;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  /* Navegação lateral fixa à esquerda, 18 rem (288 px), rolagem independente (Seção 4.1) */
+  .md-sidebar--primary {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 18rem;
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    height: 100% !important;
+    margin: 0;
+  }
+
+  [dir="ltr"] .md-sidebar--primary .md-sidebar__inner,
+  [dir="rtl"] .md-sidebar--primary .md-sidebar__inner {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Barra superior roxa em telas pequenas (Seção 4.1) */
+.md-header {
+  background-color: var(--ident-primary);
+  color: #FFFFFF;
+  font-family: var(--font-ui);
+}
+
+/* Área de conteúdo: fundo #F7F7F5, texto limitado a 46 rem (736 px), margens internas de 2,5 rem (Seção 4.1) */
+.md-main,
+.md-content {
+  background-color: var(--ident-bg);
+}
+
+.md-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.md-content__inner,
+[dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner,
+[dir="rtl"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+  max-width: 46rem;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
+
+.md-content__inner::before {
+  display: none;
+}
+
+/* Navegação lateral (barra de navegação roxa — Seções 2.2, 2.3, 3.4, 3.6, 4.1 e 4.3) */
+.md-sidebar--primary {
+  background-color: var(--ident-primary);
+  font-family: var(--font-ui);
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-sidebar--primary {
+    width: 18rem;
+  }
+
+  [dir="ltr"] .md-sidebar--primary {
+    left: -18rem;
+  }
+
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+    transform: translateX(18rem);
+  }
+
+  .md-nav--primary,
+  .md-nav--primary .md-nav,
+  .md-nav--primary .md-nav__title ~ .md-nav__list {
+    background-color: var(--ident-primary);
+  }
+
+  .md-nav--primary .md-nav__item {
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* Logo (32 px, respiro mín. 8 px) e nome do projeto no topo da navegação lateral (Seção 4.3) */
+.md-sidebar--primary .md-nav--primary > .md-nav__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--ident-primary);
+  box-shadow: none;
+  color: #FFFFFF;
+  font-family: var(--font-ui);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  height: auto;
+  padding: 0.5rem 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: static;
+  white-space: normal;
+}
+
+.md-sidebar--primary .md-nav--primary > .md-nav__title .md-nav__button.md-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 0;
+  position: static;
+}
+
+.md-sidebar--primary .md-nav--primary > .md-nav__title .md-nav__button.md-logo img,
+.md-sidebar--primary .md-nav--primary > .md-nav__title .md-nav__button.md-logo svg {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* Ocultar bloco de repositório duplicado na barra lateral para manter foco no menu */
+.md-sidebar--primary .md-nav__source {
+  display: none;
+}
+
+/* Links da navegação lateral: Source Sans 3, 0,875 rem (14 px), peso 400 / 600, linha 1,5 (Seções 2.3 e 3.6) */
+.md-sidebar--primary .md-nav__item,
+.md-sidebar--primary .md-nav__link {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.md-sidebar--primary .md-nav__link {
+  color: #FFFFFF;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item--section > .md-nav__link[for],
+.md-sidebar--primary .md-nav--primary .md-nav__item--active > .md-nav__link {
+  color: #FFFFFF;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item--section > .md-nav__link[for] {
+  font-weight: 600;
+}
+
+.md-sidebar--primary .md-nav__link:hover,
+.md-sidebar--primary .md-nav--primary .md-nav__item--active > .md-nav__link:hover,
+.md-sidebar--primary .md-nav--primary .md-nav__item--active > .md-nav__link:focus {
+  background-color: var(--ident-secondary);
+  color: #FFFFFF;
+}
+
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav--primary .md-nav__item--active > .md-nav__link.md-nav__link--active {
+  color: var(--ident-accent);
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 var(--ident-accent);
+}
+
+[dir="ltr"] .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+  border-left-color: var(--ident-secondary);
+}
+
+/* Menus sobre superfície clara (aplicar a classe .menu-claro ao contêiner — Seção 3.6) */
+.menu-claro .md-nav__link {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+  font-family: var(--font-ui);
+}
+
+.menu-claro .md-nav__link--active {
+  background-color: var(--ident-lilac);
+  color: var(--ident-primary);
+  box-shadow: inset 3px 0 0 var(--ident-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Seções 1.2, 1.3, 3.4, 3.5 e 3.6 — Componentes Padronizados
+   -------------------------------------------------------------------------- */
+
+/* Citações (Seção 3.4 e 3.6) */
+.md-typeset blockquote {
+  background-color: var(--ident-surface);
+  border-left: 4px solid var(--ident-secondary);
+  border-radius: 0 6px 6px 0;
+  color: var(--ident-text);
+  padding: 0.75rem 1rem;
+}
+
+/* Código tratado como card (Seção 1.2, 3.4 e 3.6) */
+.md-typeset .highlight,
+.md-typeset code {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 4px;
+  color: var(--ident-text);
+}
+
+.md-typeset pre > code {
+  border: none;
+}
+
+/* Tabelas (Seção 2.2, 3.4 e 3.6) */
+.md-typeset table:not([class]) {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 6px;
+  font-size: 0.9375rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--ident-lilac);
+  color: var(--ident-text);
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--ident-border);
+}
+
+/* Admonitions — Base (Seção 1.2, 2.2) */
+.md-typeset :is(.admonition, details) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(43, 43, 43, 0.04);
+  font-size: 0.9375rem;
+}
+
+.md-typeset :is(.admonition-title, summary) {
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+/* Admonitions: note, tip, example e info (Seção 3.4 e 3.6) */
+.md-typeset :is(.admonition, details):is(.note, .tip, .example, .info) {
+  border-color: var(--ident-primary);
+}
+
+.md-typeset :is(.note, .tip, .example, .info) > :is(.admonition-title, summary) {
+  background-color: var(--ident-lilac);
+  color: var(--ident-primary);
+}
+
+.md-typeset :is(.note, .tip, .example, .info) > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-primary);
+}
+
+/* Admonition: warning (Seção 3.4 e 3.6) */
+.md-typeset :is(.admonition, details).warning {
+  border-color: var(--ident-accent);
+}
+
+.md-typeset .warning > :is(.admonition-title, summary) {
+  background-color: var(--ident-accent-soft);
+  color: var(--ident-text);
+}
+
+.md-typeset .warning > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-text);
+}
+
+/* Admonition: danger (cor complementar, apenas borda e ícone — Seção 3.5 e 3.6) */
+.md-typeset :is(.admonition, details).danger {
+  border-color: var(--ident-danger);
+}
+
+.md-typeset .danger > :is(.admonition-title, summary) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+}
+
+.md-typeset .danger > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-danger);
+}
+
+/* Admonition: success / confirmações (cor complementar, apenas borda e ícone — Seção 3.5) */
+.md-typeset :is(.admonition, details).success {
+  border-color: var(--ident-success);
+}
+
+.md-typeset .success > :is(.admonition-title, summary) {
+  background-color: var(--ident-surface);
+  color: var(--ident-text);
+}
+
+.md-typeset .success > :is(.admonition-title, summary)::before {
+  background-color: var(--ident-success);
+}
+
+/* Abas de conteúdo (Seção 1.3 e 2.2) */
+.md-typeset .tabbed-labels > label {
+  font-family: var(--font-ui);
+  color: var(--ident-text);
+}
+
+.md-typeset .tabbed-set > input:checked + label {
+  color: var(--ident-primary);
+  border-color: var(--ident-primary);
+}
+
+/* Botões (Seção 2.2, 3.2, 3.4 e 3.6) */
+.md-typeset .md-button {
+  background-color: var(--ident-surface);
+  border-color: var(--ident-primary);
+  border-radius: 6px;
+  color: var(--ident-primary);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--ident-lilac);
+  border-color: var(--ident-primary);
+  color: var(--ident-primary);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--ident-accent);
+  border-color: var(--ident-accent);
+  color: var(--ident-text);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--ident-accent);
+  border-color: var(--ident-primary);
+  color: var(--ident-text);
+}
+
+/* Cards (Seção 1.2 e 3.2) */
+.card,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  background-color: var(--ident-surface);
+  border: 1px solid var(--ident-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(43, 43, 43, 0.05);
+  color: var(--ident-text);
+}
+
+/* Etiquetas (uso: <span class="etiqueta-info">Categoria</span> — Seção 2.2 e 3.6) */
+.etiqueta-info,
+.etiqueta-atencao {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.etiqueta-info {
+  background-color: var(--ident-lilac);
+  color: var(--ident-primary);
+}
+
+.etiqueta-atencao {
+  background-color: var(--ident-accent-soft);
+  color: var(--ident-text);
+}
+
+/* Checkboxes de listas de tarefas */
+.md-typeset input[type="checkbox"] {
+  accent-color: var(--ident-primary);
+}
+
+/* Seleção e foco (Seção 3.4 e 3.6) */
+::selection {
+  background: var(--ident-accent);
+  color: var(--ident-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ident-primary);
+  outline-offset: 2px;
+}
+
+.md-sidebar--primary :focus-visible {
+  outline-color: var(--ident-accent);
+}
