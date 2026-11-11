@@ -1,26 +1,39 @@
-# VerificaAAA
+# Pocket Guide de Acessibilidade
 
 <div align="center">
-<img src="docs/imagens/logo-verificaaa.png" alt="Logo de prancheta com checklist" style="width: 100px">
+  <img src="docs/assets/img/pocket-eye.svg" alt="Olho estilizado em roxo e amarelo, símbolo do Pocket Guide de Acessibilidade" width="280">
 </div>
 
+## Sobre o projeto
 
-## Introdução
+O Pocket Guide de Acessibilidade é um guia prático desenvolvido pelo Grupo 09 da disciplina de Interação Humano-Computador da Universidade de Brasília (UnB), no semestre 2026.2.
 
-Este repositório tem como propósito fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento de software, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos. 
+O projeto reúne perguntas de verificação e recursos para apoiar a criação e a avaliação de produtos digitais acessíveis. A documentação é organizada por áreas de atuação e publicada com MkDocs e Material for MkDocs.
 
-## VerificaAAA
+## Conteúdo do guia
 
-O VerificaAAA é nome do projeto criado a partir do curso de Interação Humano Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). 
+- [Desenvolvimento Web](docs/devWeb/non_text_content.md): teclado, navegação, interação, formulários, estrutura e tecnologias assistivas.
+- [Design](docs/design/design.md): apresentação visual, contraste, adaptação de tela e legibilidade.
+- [Geração de Conteúdo](docs/geracaoConteudo/conteudo.md): alternativas textuais, mídias, linguagem e clareza da comunicação.
+- [Gestão de Projetos](docs/gestaoProjeto/gestaoProjeto.md): planejamento, participação de pessoas com deficiência e avaliação da acessibilidade.
+- [Ferramentas de Acessibilidade](docs/tools/ferramentas.md): recursos de apoio à verificação e aos testes.
 
-## Contribuidores
+As perguntas estão consolidadas em [perguntas.md](perguntas.md), com referências ao Guia de Boas Práticas para Acessibilidade Digital do Ceweb.br, às WCAG 2.2 e à ABNT NBR 17225:2025.
 
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/vitorfleonardo"><img style="border-radius: 50%;" src="https://github.com/vitorfleonardo.png" width="100px;" alt=""/><br /><sub><b>Vitor Feijó</b></sub></a><br />
-    <td align="center"><a href="https://github.com/CADU110"><img style="border-radius: 50%;" src="https://github.com/CADU110.png" width="100px;" alt=""/><br /><sub><b>Carlos Eduardo</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Angelicahaas"><img style="border-radius: 50%;" src="https://github.com/Angelicahaas.png" width="100px;" alt=""/><br /><sub><b>Harleny Angéllica</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Erick-ems "><img style="border-radius: 50%;" src="https://github.com/Erick-ems.png" width="100px;" alt=""/><br /><sub><b>Erick Santos</b></sub></a><br />
-    <td align="center"><a href="https://github.com/maykonjuso "><img style="border-radius: 50%;" src="https://github.com/maykonjuso.png" width="100px;" alt=""/><br /><sub><b>Maykon Júnio</b></sub></a><br />
-  </tr>
-</table>
+## Como usar
+
+Escolha uma área do guia e percorra o checklist conforme o conteúdo ou produto avaliado. Marque cada item atendido e registre os que ainda precisam de ajustes. Quando uma pergunta não se aplicar, indique “N/A” ao lado.
+
+## Equipe
+
+- Felipe Melo
+- Marco Antônio
+- Charles Ruan
+- Matheus Eiki
+- Gabriel Portácio
+- Giovanna Aguiar
+- Kaiky Dourado
+
+## Licença
+
+Consulte os termos de uso e distribuição em [LICENSE.md](LICENSE.md).
