@@ -62,6 +62,46 @@ body { background: #f3f0f5; }
 .pocket-details table img { max-width: 100%; }
 .pocket-header :focus-visible { outline: 3px solid #ffc400; outline-offset: 5px; }
 :focus-visible { outline: 3px solid #600099; outline-offset: 4px; }
+@media (max-width: 1400px) {
+  .pocket-header__inner { gap: 20px; padding: 18px 24px; }
+  .pocket-nav { gap: 18px; }
+  .pocket-nav a { font-size: 18px; }
+  .pocket-header .md-search { width: 250px; }
+  .pocket-actions { gap: 14px; }
+  .md-typeset .pocket-button { padding: 14px 18px; }
+}
+@media (max-width: 1219px) {
+  .pocket-menu { display: block; flex-shrink: 0; }
+  .pocket-nav { gap: 16px; }
+  .pocket-brand { flex-shrink: 1; }
+  .pocket-header__inner { flex-wrap: wrap; min-height: 92px; gap: 12px; }
+  .pocket-nav { order: 4; flex-basis: 100%; }
+  .pocket-nav a { padding: 8px 0 14px; }
+  .pocket-header .md-search { margin-left: auto; }
+  .md-sidebar--primary { top: 0; height: 100%; }
+  .pocket-hero { padding: 48px 40px; min-height: 640px; }
+}
+@media (max-width: 959px) {
+  .pocket-search-toggle { display: block; margin-left: auto; }
+  .pocket-header .md-search { margin-left: 0; }
+  .pocket-header .md-search__form { border-radius: 0; }
+  .pocket-hero { grid-template-columns: 1fr 1fr; padding: 40px 28px; }
+  .pocket-actions { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 650px) {
+  .md-header.pocket-header { border-radius: 22px 22px 0 0; margin-top: 6px; }
+  .pocket-header__inner { padding: 14px 12px; gap: 6px; }
+  .pocket-brand { font-size: 20px; flex: 1; }
+  .pocket-nav { justify-content: space-between; gap: 8px; overflow-x: auto; }
+  .pocket-nav a { font-size: 14px; }
+  .pocket-nav .is-active::after { left: 0; right: 0; height: 4px; bottom: 3px; }
+  .pocket-hero { grid-template-columns: 1fr; padding: 36px 24px 20px; gap: 12px; }
+  .pocket-hero__art { max-width: 440px; justify-self: center; }
+  .md-typeset .pocket-hero h1 { margin-bottom: 28px; }
+  .pocket-welcome { font-size: 24px; }
+  .pocket-actions, .md-typeset .pocket-button { width: 100%; }
+  .md-content__inner, [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { padding: 1.25rem; }
+}
 
 /* Menu lateral da documentação: superfície lilás e seleção em roxo. */
 .md-sidebar--primary {
