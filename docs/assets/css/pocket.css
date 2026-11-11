@@ -1,3 +1,15 @@
+/* Visual do Pocket Guide G9, baseado na referência da página inicial. */
+:root, [data-md-color-scheme="identidade"] {
+  --ident-primary: #600099;
+  --ident-secondary: #7c19ba;
+  --ident-accent: #ffc400;
+  --ident-bg: #fcfafc;
+  --ident-text: #2b2030;
+  --font-heading: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 8rem; }
+body { background: #f3f0f5; }
 .md-header.pocket-header {
   display: block;
   position: sticky;
@@ -20,7 +32,12 @@
 .pocket-header .md-search__input::placeholder { color: #625868; }
 .pocket-header .md-search__icon { color: #2b2030; top: 17px; }
 .pocket-menu, .pocket-search-toggle { display: none; }
+.md-main { margin: 0 6px; border-radius: 0 0 36px 36px; box-shadow: 0 3px 9px #2b203015; }
+.md-main__inner.md-grid { max-width: 1800px; margin: 0 auto; min-height: calc(100vh - 130px); }
+.md-content__inner, [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { max-width: 64rem; padding: 2.5rem; }
+.md-sidebar--primary { top: 130px; height: calc(100vh - 130px); border-radius: 0 0 0 28px; }
 .pocket-header :focus-visible { outline: 3px solid #ffc400; outline-offset: 5px; }
+:focus-visible { outline: 3px solid #600099; outline-offset: 4px; }
 
 /* Menu lateral da documentação: superfície lilás e seleção em roxo. */
 .md-sidebar--primary {
