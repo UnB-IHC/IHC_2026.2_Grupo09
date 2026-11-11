@@ -20,11 +20,18 @@ nav:
       - Ferramentas de Acessibilidade: tools/ferramentas.md
 
 theme:
-  name: readthedocs
-  locale: pt_BR
-  titles_only: true
-  logo: imagens/logo-verificaaa.png
-  favicon: imagens/logo-verificaaa.png
+  name: material
+  language: pt
+  palette:
+    scheme: identidade
+  font: false
+  logo: assets/img/logo.svg
+  favicon: assets/img/favicon.png
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - toc.integrate
 
 markdown_extensions:
   - def_list
@@ -34,3 +41,8 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+extra:
+  generator: false
+
+copyright: "&copy; Grupo 09 — Interação Humano-Computador"
