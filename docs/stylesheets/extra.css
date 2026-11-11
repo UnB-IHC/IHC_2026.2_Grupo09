@@ -1,3 +1,134 @@
-.wy-side-nav-search .wy-dropdown>a img.logo, .wy-side-nav-search>a img.logo {
-    width: 50% !important;
+/* ==========================================================================
+   Identidade Visual da Documentação — Pocket Guide de Acessibilidade (Esquemática Roxo e Amarelo)
+   Referência: identidade-visual-mkdocs.md (v1.2)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+
+/* --------------------------------------------------------------------------
+   Seção 3.6 — Esquemática Roxo e Amarelo (Tokens e Variáveis do Material)
+   -------------------------------------------------------------------------- */
+:root,
+[data-md-color-scheme="identidade"] {
+  /* Tokens da identidade (Seção 3.1 e 3.5) */
+  --ident-primary:     #7B2CBF;
+  --ident-secondary:   #9D4EDD;
+  --ident-accent:      #F2C94C;
+  --ident-accent-soft: #FFF4CC;
+  --ident-lilac:       #F3E5FA;
+  --ident-bg:          #F7F7F5;
+  --ident-surface:     #FFFFFF;
+  --ident-border:      #D9D9D6;
+  --ident-text:        #2B2B2B;
+  --ident-danger:      #E03131;
+  --ident-success:     #2F9E44;
+
+  /* Famílias tipográficas (Seção 2.1) */
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:    "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui:      "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Variáveis do tema Material (Seção 3.6) */
+  --md-primary-fg-color:        var(--ident-primary);
+  --md-primary-fg-color--light: var(--ident-secondary);
+  --md-primary-fg-color--dark:  var(--ident-primary);
+  --md-primary-bg-color:        #FFFFFF;
+  --md-accent-fg-color:         var(--ident-primary);
+  --md-default-bg-color:        var(--ident-bg);
+  --md-default-fg-color:        var(--ident-text);
+  --md-code-bg-color:           var(--ident-surface);
+  --md-code-fg-color:           var(--ident-text);
+  --md-typeset-color:           var(--ident-text);
+  --md-typeset-a-color:         var(--ident-primary);
+  --md-text-font:               "Source Serif 4";
+}
+
+/* --------------------------------------------------------------------------
+   Seção 2 — Fontes e Escala Tipográfica (Base 1rem = 16px)
+   -------------------------------------------------------------------------- */
+html {
+  font-size: 100%;
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  background-color: var(--ident-bg);
+  color: var(--ident-text);
+  font-family: var(--font-body);
+}
+
+/* Corpo de texto: 1,0625 rem (17 px), peso 400, altura de linha 1,7 (Seção 2.3) */
+.md-typeset {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ident-text);
+}
+
+/* Títulos, texto e links (Seções 2.2, 2.3, 3.4 e 3.6) */
+.md-typeset h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ident-text);
+  border-bottom: 2px solid var(--ident-primary);
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ident-text);
+}
+
+.md-typeset h3 {
+  font-family: var(--font-body);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ident-text);
+}
+
+.md-typeset h4 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ident-text);
+}
+
+.md-typeset a {
+  color: var(--ident-primary);
+  text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  color: var(--ident-primary);
+  text-decoration-thickness: 2px;
+}
+
+/* Legendas e notas: Source Sans 3, 0,8125 rem (13 px), peso 400, linha 1,5 (Seção 2.2 e 2.3) */
+.md-typeset figcaption,
+.md-typeset caption,
+.md-typeset .footnote {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ident-text);
 }
