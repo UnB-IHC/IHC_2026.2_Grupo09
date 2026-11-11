@@ -1,21 +1,20 @@
-# VerificaAAA
+---
+title: Início
+hide:
+  - navigation
+  - toc
+---
 
-## Descrição
-
-O VerificaAAA é um projeto criado a partir do curso de Interação Humano Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). Nesse sentido, seu objetivo final é fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos.
-
-## Equipe
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/vitorfleonardo"><img style="border-radius: 50%;" src="https://github.com/vitorfleonardo.png" width="100px;" alt=""/><br /><sub><b>Vitor Feijó</b></sub></a><br />
-    <td align="center"><a href="https://github.com/CADU110"><img style="border-radius: 50%;" src="https://github.com/CADU110.png" width="100px;" alt=""/><br /><sub><b>Carlos Eduardo</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Angelicahaas"><img style="border-radius: 50%;" src="https://github.com/Angelicahaas.png" width="100px;" alt=""/><br /><sub><b>Harleny Angéllica</b></sub></a><br />   
-    <td align="center"><a href="https://github.com/Erick-ems "><img style="border-radius: 50%;" src="https://github.com/Erick-ems.png" width="100px;" alt=""/><br /><sub><b>Erick Santos</b></sub></a><br />
-    <td align="center"><a href="https://github.com/maykonjuso "><img style="border-radius: 50%;" src="https://github.com/maykonjuso.png" width="100px;" alt=""/><br /><sub><b>Maykon Júnio</b></sub></a><br />
-  </tr>
-</table>
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](https://github.com/vitorfleonardo/VerificaAAA/tree/main?tab=License-1-ov-file) para detalhes.
+<div class="pocket-hero">
+<div class="pocket-hero__copy">
+<p class="pocket-welcome">Bem-vindo ao</p>
+<h1>Pocket guide de acessibilidade</h1>
+<div class="pocket-rule" aria-hidden="true"></div>
+<p class="pocket-intro">Acesse informações, documentos e recursos do projeto em um só lugar, com uma experiência simples, organizada e colaborativa.</p>
+<div class="pocket-actions">
+<a class="pocket-button pocket-button--primary" href="devWeb/non_text_content.html"><span aria-hidden="true">▷</span> Explorar o pocket</a>
+<a class="pocket-button" href="#documentacao"><span aria-hidden="true">ⓘ</span> Ver documentação</a>
+</div>
+</div>
+<img class="pocket-hero__art" src="assets/img/pocket-eye.svg" alt="Olho estilizado em roxo e amarelo, símbolo do Pocket Guide de Acessibilidade" width="760" height="620">
+</div>
